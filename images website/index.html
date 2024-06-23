@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2236dbe96a.js" crossorigin="anonymous"></script></head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="PERSONAL/final1.png" class="final1">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Dreamer | Believer | Achiever</p>
+                <h1>Hi, I'm <span>Het Patel!</span><br> Welcome to my Website!</h1>
+            </div>
+        </div>
+        
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="PERSONAL/photo_1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A dedicated undergraduate pursuing B.Tech in Electronics and Communication Engineering at the Institute of Technology, Nirma University, I am passionate about diving into the world of Artificial Intelligence and Machine Learning. Additionally, I am keen on graphic designing, which allows me to blend creativity with technology. My interests also extend to the fields of robotics and embedded systems, where I enjoy exploring the integration of hardware and software to create innovative solutions. Eager to continuously learn and grow.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')"">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')"">Education</p>
+                    </div>
+                    <div class="tab-contents active tab" id="Skills">
+                        <ul>
+                            <li><span>Language</span><br>C, C++, Python, Verilog HDL, Matlab, Assembly Languauge</li>
+                            <li><span>Tools</span><br>MATLAB, Keil uvision5, Quartus, Figma, Canva, Adobe illustrator</li>
+                            <li><span>Soft Skills</span><br>Communication, Teamspirit, Leadership</li>
+                            <li><span>Other Skills</span><br>AI/ML, Graphic Designing, Digital Electronics, Microsoft Excel, Word, Powerpoint, Image Processing</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Jan 2024 - Present</span><br>Executive Board Member [ ECO(Electronics and Comm. Students Organisation) ]</li>
+                            <li><span>April 2024</span><br>Core Committee [CSI(Computer Society Of India) ]</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>May 2022 - Present</span><br>Nirma University, Ahmedabad</li>
+                            <li><span>June 2017 - March 2022</span><br>Sankalp International</li>
+                            <li><span>June 2013-May 2017</span><br>KDAV, Reliance Greens</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Design logos, Posts, Banners, Tshirts, Website, Posters, Certificates etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Electronics</h2>
+                    <p>Microntroller 8051, Arduio Nano,Uno, Digital Electronics, RTL Design, PCB Design and other Electronic Roles.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-free-code-camp"></i>
+                    <h2>Free Lancing Roles</h2>
+                    <p>Includes Various Works and Tasks as per suggestions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="PERSONAL/1.png">
+                    <div class="layer">
+                        <h3>Audio Echo Removal</h3>
+                        <p>The project aims to enhance audio quality by eliminating unwanted echoes from recorded sound.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PERSONAL/2.png">
+                    <div class="layer">
+                        <h3>Elevator Controller System</h3>
+                        <p>Designed for a 4-story building utilizes Verilog HDL and FPGA technology to manage efficient vertical transportation. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PERSONAL/3.png">
+                    <div class="layer">
+                        <h3>Fastest Finger First</h3>
+                        <p>The project implemented in Verilog HDL on FPGA is designed for up to 4 users.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PERSONAL/4.png">
+                    <div class="layer">
+                        <h3>Function Generator </h3>
+                        <p>The Function Generator project crafted with a 8051 Microcontroller integrates key components like the Op-Amp IC741, DAC0808, LCD display, and keypad for versatile waveform generation.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PERSONAL/5.png">
+                    <div class="layer">
+                        <h3>Mobile Signal Detector Circuit</h3>
+                        <p>Using lm358 IC.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PERSONAL/6.png">
+                    <div class="layer">
+                        <h3>Airline Reservation System</h3>
+                        <p>Using C programming.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Talk!</h1>
+                    <p><i class="fas fa-paper-plane"></i> hetkumarpatel07@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-9879540166</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/het_patel004?mx=2"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/hetzz_05/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.co/e5qUamSXed"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="PERSONAL/Het Patel (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Hetx_07</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEeSp7lrHqX4Qbpz39XgYpk7sdCPS_2XOD6a7vqMluTDaz441asHkKFzXeffF4oDyV/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+
+</html>
